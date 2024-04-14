@@ -1,0 +1,41 @@
+{
+  "canisters": {
+    "formchain_backend": {
+      "candid": "src/formchain_backend/formchain_backend.did",
+      "declarations": {
+        "node_compatibility": true
+      },
+      "package": "formchain_backend",
+      "type": "rust"
+    },
+    "formchain_frontend": {
+      "dependencies": [
+        "formchain_backend"
+      ],
+      "source": [
+        "src/formchain_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "formchain_frontend"
+    },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
