@@ -12,7 +12,7 @@ Formschain is a data collection backend and API service that handles form submis
 
 3. **Data Market** Data Stored with Formschain can be exchange for cryptocurrency tokens, means independent research or statistics firms can buy and sell data to Machine learning companies
 
-4. **Spam Protection:** Formspree offers built-in spam filtering using machine learning, as well as support for reCAPTCHA and custom rules to protect forms from spam submissions.
+4. **Forn Validation:** formschain offers built-in form validation and duplication checks, to protect forms from spam submissions.
 
 5. **Email Notifications and Data Management:** The service automatically sends email notifications when a form is submitted and allows users to customize email templates. Submissions are stored in the Formschain dashboard, where users can view, analyze, and export data.
 
@@ -20,7 +20,7 @@ Formschain is a data collection backend and API service that handles form submis
 
 7. **Ease of Use:** Setting up a form with Formschain is straightforward. Developers simply need to set their form's action attribute to a Formschain endpoint. This minimal setup makes it accessible for those with limited technical expertise.
 
-Overall, Formspchain is designed to make form handling and data collection simple and efficient, especially for static websites that require a quick and effective solution without the complexity of server-side development
+Overall, Formschain is designed to make form handling and data collection simple and efficient, especially for static websites that require a quick and effective solution without the complexity of server-side development
 
 Welcome to your new formchain project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
