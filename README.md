@@ -1,4 +1,26 @@
-# formchain
+# Formschain
+
+Formschain is a Web3 Data Collection service designed to simplify the creation and management of forms for websites, particularly static sites that lack server-side functionality. By using Formschain, developers can easily set up contact forms, order forms, or email capture forms without needing to write any server-side code.
+
+## Technical Summary:
+Formschain is a data collection backend and API service that handles form submissions for websites. They provide an endpoint to which forms and data can be submitted, managing everything from spam filtering to email notifications and data storage. The service serves a wide range of clients, from freelancers and small businesses to large corporations like Amazon and IBM. its hosted on ICP Blockchain
+
+## Problem Statement:
+1. **No Server Code Required:** Traditionally, handling form submissions required setting up server-side code to process the data. Formschain eliminates this need by providing a ready-to-use backend, making it ideal for static sites that do not have server-side capabilities.
+
+2. **Data Ownership** Data are saved in encrypted form inside blockchain. which removes single point of failure from centralized repositories
+
+3. **Data Market** Data Stored with Formschain can be exchange for cryptocurrency tokens, means independent research or statistics firms can buy and sell data to Machine learning companies
+
+4. **Spam Protection:** Formspree offers built-in spam filtering using machine learning, as well as support for reCAPTCHA and custom rules to protect forms from spam submissions.
+
+5. **Email Notifications and Data Management:** The service automatically sends email notifications when a form is submitted and allows users to customize email templates. Submissions are stored in the Formschain dashboard, where users can view, analyze, and export data.
+
+6. **Integration with Third-Party Services:** Formschain integrates with various third-party applications like Airtable, Mailchimp, Google Sheets, Slack, and more, making it easy to incorporate form data into existing workflows and tools.
+
+7. **Ease of Use:** Setting up a form with Formschain is straightforward. Developers simply need to set their form's action attribute to a Formschain endpoint. This minimal setup makes it accessible for those with limited technical expertise.
+
+Overall, Formspchain is designed to make form handling and data collection simple and efficient, especially for static websites that require a quick and effective solution without the complexity of server-side development
 
 Welcome to your new formchain project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
