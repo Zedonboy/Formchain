@@ -1,3 +1,32 @@
-service : {
-    "greet": (text) -> (text) query;
+type Form = record { name : text };
+type FormChainError = variant { KeyNotExist; InternalSystemError : text };
+type HttpHeader = record { value : text; name : text };
+type HttpRequest = record {
+  uri : text;
+  method : text;
+  body : blob;
+  headers : vec HttpHeader;
+  certificate_version : opt nat16;
+};
+type HttpResponse = record {
+  body : blob;
+  headers : vec HttpHeader;
+  upgrade : opt bool;
+  streaming_strategy : opt StreamingStrategy;
+  status_code : nat16;
+};
+type Result = variant { Ok : text; Err : FormChainError };
+type StreamingCallbackHttpResponse = record { token : opt null; body : blob };
+type StreamingStrategy = variant {
+  Callback : record {
+    token : null;
+    callback : func (null) -> (StreamingCallbackHttpResponse) query;
+  };
+};
+service : () -> {
+  create_form : (Form) -> (Result);
+  export_candid : () -> (text) query;
+  greet : (text) -> (text) query;
+  http_request : (HttpRequest) -> (HttpResponse) query;
+  http_request_update : (HttpRequest) -> (HttpResponse);
 }

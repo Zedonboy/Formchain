@@ -9,7 +9,8 @@
     "prebuild": "npm run prebuild --workspaces --if-present",
     "pretest": "npm run prebuild --workspaces --if-present",
     "start": "npm start --workspaces --if-present",
-    "test": "npm test --workspaces --if-present"
+    "test": "npm test --workspaces --if-present",
+    "build:core": "cargo build --release --target wasm32-unknown-unknown --package formchain_backend && cp target/wasm32-unknown-unknown/release/formchain_backend.wasm src/formchain_registry/src && candid-extractor target/wasm32-unknown-unknown/release/formchain_backend.wasm > src/formchain_backend/formchain_backend.did"
   },
   "type": "module",
   "workspaces": [

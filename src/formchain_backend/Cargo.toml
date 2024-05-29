@@ -9,6 +9,13 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-candid = "0.10"
-ic-cdk = "0.12"
-ic-cdk-timers = "0.6" # Feel free to remove this dependency if you don't need timers
+candid = {workspace = true}
+ic-cdk = {workspace = true}
+hex = { workspace = true }
+serde_bytes = "0.11"
+serde = {workspace = true}
+canister_http_router ={ path = "../canister_http_router"}
+ic-stable-structures = "0.6.4"
+ciborium = "0.2.2"
+serde_json = "1"
+# ic-cdk-timers = "0.6" # Feel free to remove this dependency if you don't need timers
